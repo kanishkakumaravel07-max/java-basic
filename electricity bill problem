@@ -1,0 +1,57 @@
+Write a program to input the electricity unit consumed and calculate the total electricity bill according to the given conditions:
+
+For the first 50 units Rs. 3.50/unit
+
+For the next 100 units Rs. 4.50/unit
+
+For the next 100 units Rs. 5.20/unit
+
+For units above 250 Rs. 6.75/unit
+
+An additional surcharge of 20% is added to the bill.
+
+Input format:
+
+An integer representing total units consumed.
+
+Output format :
+
+A float value representing the total electricity bill in rupees.
+
+Refer to the sample output for formatting specifications.
+
+Code constraints:
+
+0 units <= 100000
+
+Sample test cases:
+
+Input 1:
+
+50
+
+Output 1:
+
+210.00
+
+
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int unit = sc.nextInt();
+        double amount=0.0;
+        if(unit>=0 && unit<=50){
+            amount=unit*3.50;
+        }else if(unit>=50 && unit<=150){
+            amount=(175)+(unit-50)*4.50;
+        }else if(unit>=150 && unit<=250){
+            amount=(175)+(450)+(unit-150)*5.20;
+        }else if(unit>250){
+            amount=(175)+(450)+(520)+(unit-250)*6.75;
+        }
+        System.out.printf("%.2f",amount+(amount*0.20));
+    }
+}
