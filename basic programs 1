@@ -1,0 +1,149 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      System.out.println("Hello World");
+  }
+}
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+      String name = scan.nextLine();
+      System.out.println("Hello "+name);
+  }
+}
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      char ch = s.next().charAt(0);
+      if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
+        System.out.println("vowel");
+      }else{
+        System.out.println("consonant");
+      }
+      
+  }
+}
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      for(int a=1;a<=10;a++)
+      System.out.println(a);
+  }
+}
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int num = s.nextInt();
+      switch(num) {
+        case 0:
+        System.out.println("zero");
+        break;
+        case 1:
+        System.out.println("one");
+        break;
+        case 2:
+        System.out.println("two");
+        break;
+        case 3:
+        System.out.println("three");
+        break;
+        case 4:
+        System.out.println("four");
+        break;
+        case 5:
+        System.out.println("five");
+        break;
+        case 6:
+        System.out.println("six");
+        break;
+        case 7:
+        System.out.println("seven");
+        break;
+        case 8:
+        System.out.println("eight");
+        break;
+        case 9:
+        System.out.println("nine");
+        break;
+        default:
+        System.out.println("null");
+        break;
+        
+      }
+      
+  }
+}
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int n1 = s.nextInt();
+      int n2 = s.nextInt();
+      
+      System.out.println(n1+n2);
+  }
+}
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int n1 = s.nextInt();
+      int n2 = s.nextInt();
+      
+      System.out.println(Math.max(n1,n2));
+      
+  }
+}
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int a = s.nextInt();
+      int b = s.nextInt();
+      int c = s.nextInt();
+      if(a>b && a>c){
+        System.out.println(a);
+      }else if(b>c){
+        System.out.println(b);
+      }else{
+        System.out.println(c);
+      }
+      
+      
+  }
+}
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int year = s.nextInt();
+      if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println("yes");
+      }
+      else{
+        System.out.println("no");
+      }
+      
+  }
+}
+
+
+
