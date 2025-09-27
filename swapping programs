@@ -1,0 +1,67 @@
+swapping
+class Main {
+    public static void main(String[] args) {
+        int a = 30;
+        int b = 20;
+        int temp =  a;
+         a = b;
+         b = temp;
+            System.out.println(a+ " " +b);
+    }
+}
+
+without using temp
+
+class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        a=a+b;//30
+        b=a-b;//10
+        a=a-b;//20
+            System.out.println(a+ " " +b);
+    }
+}
+
+multiply and division
+
+class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        a=a*b;//200
+        b=a/b;//10
+        a=a/b;//20
+            System.out.println(a+ " " +b);
+    }
+}
+
+
+ex-or
+
+class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        a=a^b;//30
+        b=a^b;//20
+        a=a^b;//10
+            System.out.println(a+ " " +b);
+    }
+}
+
+get a input from the user
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a value");
+        int a = scan.nextInt();
+        System.out.println("Enter b value");
+        int b = scan.nextInt();
+        System.out.println(a+ " " +b);
+    }
+}
+
+
