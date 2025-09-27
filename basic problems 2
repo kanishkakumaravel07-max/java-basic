@@ -1,0 +1,102 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int num1 = s.nextInt();
+      int num2 = s.nextInt();
+      System.out.println(num1 * num2);
+  }
+}
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int num = s.nextInt();
+      if(num > 0){
+        System.out.println("positive");
+      }else{
+        System.out.println("negative");
+      }
+      
+  }
+}
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+      int num = scan.nextInt();
+      System.out.println(num*num);
+  }
+}
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int num = s.nextInt();
+      if(num%2 == 0){
+        System.out.println("even");
+      }else{
+        System.out.println("odd");
+  }
+      }
+      
+}
+
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int a = s.nextInt();
+      int b = s.nextInt();
+      int c = s.nextInt();
+      int avg = (a+b+c)/3;
+      System.out.println(avg);
+  }
+}
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int n = s.nextInt();
+      int sum = 0;
+      for(int i = 0; i <=n; i++){
+        sum = sum + i;
+      }
+      System.out.println(sum);
+  }
+}
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int num = s.nextInt();
+      System.out.println((int)(Math.sqrt(num)));
+  }
+}
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner s = new Scanner(System.in);
+      int n = s.nextInt();
+      for(int i = 2; i*i<=n;i++){
+        if(n%i==0){
+          System.out.println("no");
+          return;
+        }
+      }
+      System.out.println("yes");
+  }
+}
+
+
+
+
