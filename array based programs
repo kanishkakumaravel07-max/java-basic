@@ -1,0 +1,130 @@
+// insertion using array
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int size = s.nextInt();
+        int arr[] = new int[size+1];
+        for(int i=0;i<size;i++){
+            arr[i] = s.nextInt();
+        }
+        int pos=s.nextInt();
+        if(pos<0||pos>size+1){
+            System.out.println("Invalid");
+        } else {
+            int element = s.nextInt();
+            for(int i=0;i>pos;i--){
+                arr[i] = arr[i-1];
+            }
+            arr[pos]=element;
+        }
+        for(int x:arr){
+            System.out.print(x+" ");
+        }
+      
+    }
+  }
+
+
+
+// deletion using array
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int size = s.nextInt();
+        int arr[] = new int[size];
+        for(int i=0;i<size;i++){
+            arr[i] = s.nextInt();
+        }
+        int pos=s.nextInt();
+        if(pos<0||pos>size){
+            System.out.println("Invalid");
+        } else {
+            int element = s.nextInt();
+            for(int i=pos;i<size-1;i++){
+                arr[i] = arr[i+1];
+            }
+           for(int i = 0; i<size-1;i++){
+            System.out.print(arr[i]+" ");
+        }
+        
+        }
+    }
+  }
+
+//searching using array
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int size = s.nextInt();
+        int arr[] = new int[size];
+        for(int i=0;i<size;i++){
+            arr[i]=s.nextInt();
+        }
+        int searchdata = s.nextInt();
+        
+            for(int i=0;i<size;i++){
+                if(arr[i]==searchdata){
+                    System.out.println(i);
+                    return;
+                }
+            }
+            
+       
+            System.out.println("-1");
+        }
+      
+    }
+
+//sorting using array
+import java.util.*; 
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int size = s.nextInt();
+        int arr[] = new int[size];
+        for(int i=0;i<size;i++){
+            arr[i]=s.nextInt();
+        }
+            for(int i=0;i<size;i++){
+                for(int j=i+1;j<size;j++){
+                    if(arr[i]>arr[j]){
+                        int temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;                    }
+                }
+            }
+    }
+    for(int x:arr){
+            System.out.print(x+" ");
+        }
+      
+    }
+
+
+
+//swapping adjacent numbers
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for (int i = 0; i < n - 1; i += 2) {
+            int temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+        }
+        for (int x : arr) {
+            System.out.print(x + " ");
+       }
+    }
+}
+
