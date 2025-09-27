@@ -1,0 +1,252 @@
+
+get a input from the user
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a value");
+        int a = scan.nextInt();
+        System.out.println("Enter b value");
+        int b = scan.nextInt();
+        System.out.println(a+ " " +b);
+    }
+}
+
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+      // char c = 'q';
+      //string str = "123";
+      char c = scan.next().charAt(0);// i am op i only
+      // string str = scan.nextLine();// i am op i am 
+        System.out.println(c);
+    }
+}
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+     int a = scan.nextInt();
+     scan.nextLine();
+     String str = scan.nextLine();// we can run only next wo using above statement
+     System.out.println(a+" "+str);
+    }
+}
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+     int a = scan.nextInt();
+     
+     if (a>=10){
+         System.out.println("true");
+     } else {
+         System.out.println("false");
+     }
+     
+}
+}
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+     int a = scan.nextInt();
+     int b = scan.nextInt();
+     int c = scan.nextInt();
+     
+     if (a<b && a<c){
+         System.out.println(a);
+     } else if(b<c){
+         System.out.println(b);
+     } else {
+         System.out.println(c);
+     }
+     
+}
+}
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner scan = new Scanner(System.in);
+      int m = scan.nextInt();
+      if(m>100){
+        System.out.println("Invalid");
+      }
+       else if (m<=100 && m>=91){
+        System.out.println("grade O");
+      } else if(m<90 && m>=81) {
+        System.out.println("grade A");
+      }else if(m<80 && m>=71){
+        System.out.println("grade B");
+      }else if(m<70 && m>=61){
+        System.out.println("grade C");
+      }else if(m<60 && m>=51){
+        System.out.println("grade D");
+      }else {
+        System.out.println("Fail");
+      }
+      
+  }
+}
+leap year 
+
+
+
+
+
+import java.util.Scanner;
+
+public class hello {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int year = scan.nextInt();
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+              System.out.println("Leap year");
+      } else {    System.out.println("Not a Leap Year");
+
+ }
+    }
+}
+
+
+float convertion
+
+
+
+class Main {
+    public static void main(String[] args) {
+        float f = 56.7868f;
+        System.out.printf("%.2f",f);
+    }
+}
+
+import java.util.Scanner;
+
+public class hello {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int year = scan.nextInt();
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println("Leap Year");
+
+        } else {
+            System.out.println("Not a Leap year");
+        }
+
+    }
+}
+
+
+
+math operation
+class Main {
+    public static void main(String[] args) {
+        float f = 56.7868f;
+        System.out.println(Math.sqrt(3));
+    }
+}
+
+reverse the number
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	    int rev = 0;
+	    while(n>0){
+	        int l = n%10;
+	        rev = rev*10 + l;
+	        n = n/10;
+	    }
+		System.out.println(rev);
+	}
+}
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    int n = s.nextInt();
+	    int rev = 0;
+	    while(n>0){
+	        int l = n%10;
+	        rev = rev*10 + l;
+	        n = n/10;
+	    }
+	    if(n==rev){
+	        System.out.println("palindrome");
+	    } else {
+	        System.out.println("Not palindrome");
+	    }
+		
+	}
+}
+armstrong
+
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+        int original = num;
+        int result = 0;
+        int n = String.valueOf(num).length();
+        while (num > 0) {
+            int digit = num % 10;
+            result += Math.pow(digit, n);
+            num = num / 10;
+        }
+        if (result == original) {
+            System.out.println("Armstrong number");
+        } else {
+            System.out.println("NOT an Armstrong number");
+        }
+
+      
+    }
+}
+
+remove num and print remain values
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int s = sc.nextInt();
+        int ans = 0;
+        int c = 0;
+        while(n>0){
+            int r = n%10;
+            if(s!=r){
+                c++;
+                ans=r*(int)(Math.pow(10,c-1))+ans;
+            }
+            n=n/10;
+        }
+        System.out.println(ans);
+    }
+}
+// 1234
+// remove 2 and print remain values
+//134
