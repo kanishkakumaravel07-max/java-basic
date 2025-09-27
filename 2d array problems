@@ -1,0 +1,95 @@
+// swap the odd and even places
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for (int i = 0; i < n - 2; i += 4) {
+            int temp = arr[i];
+            arr[i] = arr[i + 2];
+            arr[i + 2] = temp;
+        }
+        for (int i = 1; i < n - 2; i += 4) {
+            int temp = arr[i];
+            arr[i] = arr[i + 2];
+            arr[i + 2] = temp;
+        }
+        for (int x : arr) {
+            System.out.print(x + " ");
+       }
+    }
+}
+}
+addd the matrix border values
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int rsize = sc.nextInt();
+        int csize = sc.nextInt();
+        
+        int [][] arr = new int[rsize][csize];
+        for (int i = 0; i < rsize; i++) {
+            for(int j = 0;j<csize; j++){
+                arr[i] [j] = sc.nextInt();
+            }
+            
+        }
+        int sum = 0;
+        for (int i = 0; i < rsize; i++) {
+            for(int j = 0;j<csize;j++) {
+             if(i==0||i==rsize-1||j==0||j==csize-1){
+                 sum=sum+arr[i][j];
+             } 
+        }
+        
+    }
+    System.out.println(sum);
+}
+}
+sum the each row and column and compare find the greatest number
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int rsize = sc.nextInt();
+        int csize = sc.nextInt();
+        
+        int [][] arr = new int[rsize][csize];
+        for (int i = 0; i < rsize; i++) {
+            for(int j = 0;j<csize; j++){
+                arr[i] [j] = sc.nextInt();
+            }
+            
+        }
+        int rmax=Integer.MIN_VALUE,cmax=Integer.MIN_VALUE;
+        int row,col;
+        for (int i = 0; i < rsize; i++) {
+            row = 0;
+            col=0;
+            for(int j = 0;j<csize;j++) {
+             row = row+arr[i][j];
+             col = col+arr[i][j];
+             } 
+             if(row>rmax){
+                 rmax=row;
+             }
+             if(col>cmax){
+                 cmax=col;
+             }
+        }
+        
+    }
+    System.out.println(cmax+ " "+rmax);
+  }
+}
